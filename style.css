@@ -1,0 +1,395 @@
+:root {
+  --primary-color: #000000; 
+  --accent-color: #e60000;  
+  --text-color: #ffffff;
+  --secondary-bg: #111111;
+  --card-bg: #1e1e1e;
+  --shadow-color: rgba(0, 0, 0, 0.7);
+}
+
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.text-red {
+    color: var(--accent-color) !important;
+}
+
+.section-heading {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 32px;
+}
+.section-subheading {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.site-logo {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
+
+.site-title {
+    color: var(--accent-color) !important;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-color) !important;
+  font-weight: 400;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+
+.btn-accent {
+  background: var(--accent-color) !important;
+  padding: 8px 20px !important;
+  color: var(--text-color);
+  border: none;
+  font-weight: 600 !important;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn-rounded {
+    border-radius: 50px !important;
+}
+
+.btn-accent:hover {
+  background: #ff3333 !important;
+  box-shadow: 0 4px 10px rgba(230, 0, 0, 0.4);
+}
+
+
+.hero-slide-img {
+  height: 450px;
+  object-fit: contain; 
+  background: var(--primary-color);
+}
+
+.carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding-bottom: 0;
+    text-align: left !important;
+}
+
+.slide-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.slide-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.welcome-section {
+    padding: 30px 0;
+    background: var(--primary-color) !important; 
+}
+.welcome-title {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.welcome-subtitle { 
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.welcome-text {
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+.brands {
+    padding-top: 30px;
+    text-align: center;
+}
+.brand-card-col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.brand-card {
+    background: var(--primary-color); 
+    border-radius: 10px;
+    box-shadow: none; 
+    border: 1px solid var(--secondary-bg); 
+}
+.brand-img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain; 
+    background: var(--primary-color);
+    border-radius: 5px;
+    padding: 15px; 
+}
+.brand-card .btn-accent {
+    width: 80%; 
+    margin: 0 auto 15px auto !important; 
+    display: block;
+    font-size: 13px;
+    padding: 6px 15px !important;
+}
+
+
+.fr-card {
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  transition: box-shadow 0.3s, transform 0.3s;
+  height: 100%;
+  text-align: center;
+}
+
+.fr-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.fr-city-title {
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.fr-name {
+    font-weight: 600;
+    color: var(--accent-color); 
+    font-size: 14px;
+}
+.fr-address, .fr-address-small {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px; 
+}
+
+
+#opening-soon {
+    background: var(--primary-color);
+}
+.opening-soon-card {
+    background: var(--secondary-bg);
+    border: 2px solid var(--accent-color);
+}
+
+
+.col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%; 
+}
+@media (max-width: 1200px) { 
+    .col-lg-2-4 {
+        width: 25%; 
+    }
+}
+
+
+.img-fluid-opening {
+  width: 100%;
+  height: 220px; 
+  object-fit: contain; 
+  background: var(--primary-color); 
+  border-radius: 10px;
+}
+
+.opening-status {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.site-footer {
+    background: var(--secondary-bg);
+    padding: 60px 0;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.footer-about {
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.footer-heading {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    padding: 2px 0;
+}
+
+.footer-links li a:hover {
+    color: var(--accent-color);
+}
+
+.contact-section p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.contact-section strong {
+  color: var(--accent-color);             
+}
+
+.contact-section a {
+  color: #ccc;            
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.contact-section a:hover {
+  color: var(--accent-color);         
+  text-decoration: underline;
+}
+
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background: var(--text-color);
+  color: var(--accent-color);
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover {
+  background: var(--accent-color);
+  color: var(--text-color);
+}
+
+.copyright-text {
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+@media (max-width: 992px) {
+    .fr-img {
+        height: 140px;
+    }
+    
+    .col-lg-2-4 {
+        width: 33.333%; 
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+    .fr-img {
+        height: 120px;
+    }
+    .col-lg-2-4 {
+        width: 50%; 
+    }
+}
+
+
+@media (max-width: 576px) {
+    .site-logo {
+        width: 50px;
+    }
+    .site-title {
+        font-size: 20px;
+    }
+    .btn-accent {
+        padding: 6px 15px !important;
+        font-size: 13px;
+    }
+    
+    
+    .brand-card-col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .brand-img {
+        height: 80px; 
+        padding: 10px;
+    }
+    .brand-card .btn-accent {
+        width: 90%;
+        margin: 0 auto 10px auto !important;
+        padding: 5px 10px !important;
+    }
+    
+    
+    .fr-img, .img-fluid-opening {
+        height: 100px; 
+    }
+    .fr-card, .opening-soon-card {
+        padding: 10px;
+    }
+    .fr-city-title {
+        font-size: 15px;
+    }
+    .fr-address-small {
+        font-size: 11px;
+    }
+    .fr-name {
+        font-size: 13px;
+    }
+    
+    .footer-heading {
+        margin-top: 15px;
+    }
+    
+    
+    .col-lg-2-4 {
+        width: 50%; 
+    }
+}
